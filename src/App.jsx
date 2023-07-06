@@ -1,18 +1,15 @@
 import React from 'react'
 import Menu from './components/Menu'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
-const router = createBrowserRouter([
-    {
-      path: '/',
-      element:<Menu />,
-    },
-  ],
-  {basename: '/calories-calculator/'}
-)
-
-function App() {
-    return <RouterProvider router={router} />
-}
+const App = () => {
+  return(
+    <>
+      <Routes>
+        <Route path='/' element={<Menu />}></Route>
+      </Routes>
+    </>
+  );
+};
 
 export default App
