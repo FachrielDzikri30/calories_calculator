@@ -1,15 +1,17 @@
 import React from 'react'
 import Menu from './components/Menu'
-import { Routes, Route } from 'react-router-dom'
+import { Route, Routes, BrowserRouter } from 'react-router-dom'
 
 const App = () => {
-  return(
+  return (
     <>
-      <Routes>
-        <Route path='/' element={<Menu />}></Route>
-      </Routes>
+      <BrowserRouter basename='/calories-calculator/'>
+        <Routes>
+          <Route path='/' element={<Menu />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  );
-};
+  )
+}
 
 export default App
