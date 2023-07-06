@@ -7,7 +7,7 @@ const router = createBrowserRouter([
       path: '/',
       element:<Menu />,
     },
-  ]
+  ],
   {basename: '/calories-calculator/'}
 )
 
