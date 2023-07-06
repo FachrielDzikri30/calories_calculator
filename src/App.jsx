@@ -5,7 +5,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom'
 const App = () => {
   return (
     <>
-      <BrowserRouter basename='/calories-calculator/'>
+      <BrowserRouter basename='/calories_calculator/'>
         <Routes>
           <Route path='/' element={<Menu />} />
         </Routes>
